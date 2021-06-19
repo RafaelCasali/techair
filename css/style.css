@@ -1,0 +1,49 @@
+.retangle{
+    position:relative;
+    height: 216px;
+    background: #01233E;
+}
+.retangle .logo1 img {
+    display: block;
+    margin: 0px auto;
+}
+.retangle .imagem1 img{
+    display: block;
+    margin: 0px auto;
+    max-width: 100%;
+}
+.container{
+    margin-top: 250px;
+}
+.container .logosmall img{
+    display: block;
+    margin: auto;
+}
+.container .col-6 .underline{
+    border-bottom:solid;
+    border-width: 2px;
+}
+.container .col-4{
+    padding: 16px;
+}
+.container .col-1{
+    display: block;
+    margin: auto;
+}
+.container .col-1 .underline{
+    border:solid;
+    border-width: 2px;
+}
+.container .socimg img{
+    margin: auto;
+    padding: 16px;   
+}
+.container2 .footer{
+    background-color: #01233E;
+    color:white;
+}
+.footer2{
+    position:relative;
+    height: 29px;
+    background: #01233E;
+}
