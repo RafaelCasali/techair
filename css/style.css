@@ -38,6 +38,30 @@
     margin: auto;
     padding: 16px;   
 }
+.container .saiba .saibapage{
+    background-color: #01233E;
+    padding: 2px 24px;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    text-decoration:none;
+}
+.container .saiba2 .saibapage2{
+    background-color: #FFFF;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #01233E;
+    border-radius: 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    text-decoration:none;
+}
 .container2 .footer{
     background-color: #01233E;
     color:white;
