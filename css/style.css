@@ -1,3 +1,8 @@
+h3 {
+    border-bottom: 2px solid #01233E;
+    width: 100%;
+}
+
 .header{
     position:relative;
     height: 216px;
@@ -7,6 +12,51 @@
     display: block;
     margin: 0px auto;
 }
+
+.menu {
+    font-size: 18px;
+    background-color: #01233E;
+    padding: 6px 0;
+}
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 600;
+}
+.menu a:hover {
+    color: #83CFEF;
+}
+.menu div::after {
+    margin-left: 16px;
+    content: '|';
+    color: #FFF;
+}
+.menu div:last-child::after {
+    margin-left: 0px;
+    content: ''
+}
+.menu-left {
+    width: 0; 
+    height: 0; 
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid #01233E;
+    transform: rotate(45deg);
+    margin-top: -4px;
+    margin-right: -32px;
+}
+.menu-right {
+    width: 0; 
+    height: 0; 
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid #01233E;
+    transform: rotate(315deg);
+    margin-top: -4px;
+    margin-left: -31px;
+}
+
 .banner .imagem1 img{
     display: block;
     margin: 0px auto;
