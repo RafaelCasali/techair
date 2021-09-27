@@ -14,7 +14,8 @@ h3 {
 }
 
 .menu {
-    font-size: 18px;
+    font-size: 16px;
+    min-height: 39px;
     background-color: #01233E;
     padding: 6px 0;
 }
@@ -66,6 +67,11 @@ h3 {
     display: block;
     margin: auto;
 }
+
+.title-service {
+    font-weight: 700;
+}
+
 .container .col-6 .underline{
     border-bottom:solid;
     border-color: #01233E;
