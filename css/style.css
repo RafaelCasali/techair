@@ -62,7 +62,6 @@ h3 {
     margin: 0px auto;
     max-width: 100%;
 }
-.container{}
 .container .logosmall img{
     display: block;
     margin: auto;
@@ -115,4 +114,5 @@ h3 {
     width: 100%;
     background: #01233E;
     bottom: 0;
+    
 }
