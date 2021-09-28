@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: #01233E;
+}
+.retangle{
+    text-align: center;
+    background: #01233E;
+}
+.retangle .logo1 img {
+   margin-top: 160px;
+}
+h1 {
+    margin-top: 16px;
+    background: #01233E;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Roboto;
+}
