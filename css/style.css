@@ -14,8 +14,20 @@ h3 {
     margin: 0px auto;
 }
 
+@media (min-width: 992px) {
+    .menu {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu {
+        font-size: 16px;
+    }
+}
+
+
 .menu {
-    font-size: 16px;
     min-height: 39px;
     background-color: #01233E;
     padding: 6px 0;
@@ -111,13 +123,15 @@ h3 {
     font-weight: normal;
     text-decoration:none;
 }
-.container .col-12{
-    display: flex;
-    margin: 0px, auto;
-}
+
 .footer{
     width: 100%;
     background: #01233E;
     bottom: 0;
-    
+    color: #FFF;
+    padding-top: 8px;
+}
+
+.footer p {
+    margin-bottom: 0;
 }
