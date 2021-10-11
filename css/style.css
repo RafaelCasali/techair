@@ -9,9 +9,8 @@ h3 {
     height: 216px;
     background: #01233E;
 }
-.header .logo1 img {
-    display: block;
-    margin: 0px auto;
+.header .logo1 {
+    text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -24,6 +23,54 @@ h3 {
     .menu {
         font-size: 16px;
     }
+}
+
+.menu-mobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #01233E;
+    z-index: 99;
+}
+
+.menu-mobile.dst {
+    display: none;
+}
+
+.menu-mobile a {
+    color: #FFF;
+    font-size: 22px;
+    border-bottom: 1px solid #FFF;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-mobile a:last-child {
+    border-bottom: 0;
+    font-weight: 700;
+}
+
+.list-menu-mobile {
+    display: flex;
+    flex-flow: column;
+}
+
+.menu-mobile-button {
+    margin-top: 16px;
+    width: 36px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.menu-mobile-button span {
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 2px 18px;
+    font-size: 0px;
+    float: left;
+    margin-bottom: 4px;
 }
 
 
@@ -81,6 +128,10 @@ h3 {
     margin: auto;
 }
 
+.services-home {
+    text-align: center;
+}
+
 .title-service {
     font-weight: 700;
 }
@@ -122,6 +173,15 @@ h3 {
     font-style: normal;
     font-weight: normal;
     text-decoration:none;
+}
+
+.address-footer p {
+    margin-bottom: 8px;
+}
+
+.address-footer img {
+    height: 22px;
+    margin: -4px 0px 0px 8px;
 }
 
 .footer{
