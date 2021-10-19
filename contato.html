@@ -51,10 +51,10 @@
                 (document.getElementById('menu').className = "menu-mobile atv");
             else
                 (document.getElementById('menu').className = "menu-mobile dst");
-        }
+        };
 
-        function form() {
-            alert('Mensagem enviada com sucesso');
+        function envia() {
+            alert("Mensagem enviada com sucesso");
         }
     </script>
 
@@ -83,12 +83,23 @@
 
 <body>
     <div class="header">
-        <div class="logo1">
-            <a href="./index.html">
-                <img src="img/logo1.png" alt="Logo">
-            </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-mobile-button d-block d-lg-none" onClick="menu();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo1">
+                        <a href="./index.html">
+                            <img src="img/logo1.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container d-none d-sm-block">
+        <div class="container d-none d-lg-block">
             <div class="row justify-content-center">
                 <div class="col-1 d-flex justify-content-end">
                     <div class="menu-left"></div>
@@ -159,7 +170,7 @@
                           <textarea class="form-control"  placeholder="Mensagem" style="height: 120px;"></textarea>
                       </div>                      
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg" onclick="form()">Enviar</button>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="envia();">Enviar</button>
                     <button type="button" class="btn btn-secondary btn-lg">Limpar</button>
                 </form>                          
             </div>
