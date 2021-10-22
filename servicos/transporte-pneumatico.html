@@ -44,6 +44,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="shortcut icon" href="../favicon.ico" />
 
+    <script type='text/javascript' src='../js/amplia.js'></script>
+
     <script type="text/javascript">
         function menu() {
             var visivel = document.getElementById('menu').className
@@ -102,18 +104,23 @@
                     <div>
                         <a href="../empresa.html">EMPRESA</a>
                     </div>
+                    <div class="division-menu">|</div>
                     <div>
                         <a href="../servicos/transporte-pneumatico.html">TRANSPORTE PNEUMÁTICO</a>
                     </div>                
+                    <div class="division-menu">|</div>
                     <div>
                         <a href="../servicos/exaustao-de-po.html">EXAUSTÃO DE PÓ</a>
                     </div>    
+                    <div class="division-menu">|</div>
                     <div>
                         <a href="../servicos/calderaria.html">CALDEIRARIA</a>
                     </div>
+                    <div class="division-menu">|</div>
                     <div>
                         <a href="../servicos/ventilacao.html">VENTILAÇÃO</a>
                     </div> 
+                    <div class="division-menu">|</div>
                     <div>
                         <a href="../contato.html">CONTATO</a>
                     </div>                                                                                    
@@ -173,47 +180,63 @@
                             <h6>Fotos <img src="../img/minilogo.png" alt="Logo"></h6>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(0).jpg" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(0).jpg" onclick="ampliar('../img/transporte/transporte(0).jpg')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(0).png" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(0).png" onclick="ampliar('../img/transporte/transporte(0).png')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(1).jpg" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(1).jpg" onclick="ampliar('../img/transporte/transporte(1).jpg')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(1).png" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(1).png" onclick="ampliar('../img/transporte/transporte(1).png')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(2).jpg" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(2).jpg" onclick="ampliar('../img/transporte/transporte(2).jpg')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(2).png" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(2).png" onclick="ampliar('../img/transporte/transporte(2).png')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(3).jpg" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(3).jpg" onclick="ampliar('../img/transporte/transporte(3).jpg')">
+                            </div>
                         </div>
                         <div class="col-6 col-md-2 mb-2">
-                            <img src="../img/transporte/transporte(4).jpg" class="w-100">
+                            <div class="img-thumb">
+                                <img src="../img/transporte/transporte(4).jpg" onclick="ampliar('../img/transporte/transporte(4).jpg')">
+                            </div>
                         </div>                                                                            
                     </div>                     
             </div>
         </div>
 
         <div class="row align-items-start mt-4">
-            <div class = "col-6 col-lg-4">
+            <div class="col-12 col-lg-4">
                 <div class="logosmall">
                     <img src="../img/logosmall.png" alt="Logo">
                 </div>    
             </div>
-            <div class="col-6 col-lg-4 address-footer">
+            <div class="col-12 col-lg-4 address-footer">
                 <p><strong>Localização</strong></p>
                 <p>Rua João Bosco, 499 - Jacareí / SP</p> 
-                <p>Fone: +55 (12) 98176-4099  <a href="https://api.whatsapp.com/send?phone=5512981764099"><img src="img/whats.png"></a></p>
+                <p>Fone: +55 (12) 98176-4099  <a href="https://api.whatsapp.com/send?phone=5512981764099"><img src="../img/whats.png"></a></p>
                 <p>contato@tec-air.com.br</p>
 
             </div>
-            <div class = "col align-self-center col-lg-4 text-center"> 
+            <div class="col align-self-center col-lg-4 text-center"> 
                 <p>Redes sociais</p>
                 <div class="socimg">
                     <img src="../img/FB.png">
@@ -233,5 +256,12 @@
             </div>            
         </div> 
     </div>  
+
+    <div class="lightbox" id="lightbox">
+        <a onclick="ampliar('')" class="fechar">&times;</a>
+        <div class="conteudo">
+          <img src="" alt="" id="image-ampliada">
+        </div>
+    </div>    
 </body>
 </html>

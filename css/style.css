@@ -51,6 +51,17 @@ h3, h6 {
     font-weight: 700;
 }
 
+.img-home {
+    width: 95%;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.img-home img {
+    width: 100%;
+    height: auto;
+}
+
 .list-menu-mobile {
     display: flex;
     flex-flow: column;
@@ -88,14 +99,8 @@ h3, h6 {
 .menu a:hover {
     color: #83CFEF;
 }
-.menu div::after {
-    margin-left: 16px;
-    content: '|';
+.menu .division-menu {
     color: #FFF;
-}
-.menu div:last-child::after {
-    margin-left: 0px;
-    content: ''
 }
 .menu-left {
     width: 0; 
@@ -175,8 +180,23 @@ h3, h6 {
     text-decoration:none;
 }
 
+.img-thumb {
+    width: 95%;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.img-thumb img {
+    width: auto;
+    height: auto;
+    min-height: 60px;
+    max-width: 100%;
+    cursor: pointer;
+}
+
 .address-footer p {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .address-footer img {
@@ -195,3 +215,50 @@ h3, h6 {
 .footer p {
     margin-bottom: 0;
 }
+
+/* Lightbox */
+
+.lightbox {
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 1000;
+  }
+  
+  .lightbox.atv {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  .lightbox img {
+    border-radius: 1em;
+    display: block;
+    margin: auto;
+    max-height: 80vh;
+    max-width: 90vh;
+  }
+  
+  .lightbox .fechar {
+    color: #fff;
+    cursor: pointer;
+    font-size: 4em;
+    font-weight: bold;
+    height: 1em;
+    position: fixed;
+    text-decoration: none;
+    right: 0;
+    top: 0;
+    width: 1em;
+    z-index: 1001;
+  }
+  
+  .lightbox p {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
